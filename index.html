@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Boncyber Cafe — Imprimerie & Services</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Boncyber Cafe</h1>
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#tarifs">Tarifs</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Impression et services rapides</h2>
+        <p>Cartes, flyers, brochures, affiches et plus — qualité professionnelle à prix raisonnable.</p>
+        <a class="btn" href="#contact">Demander un devis</a>
+      </div>
+    </section>
+
+    <section id="services" class="container services">
+      <h3>Nos services</h3>
+      <div class="grid">
+        <div class="card">
+          <h4>Cartes de visite</h4>
+          <p>Impression recto-verso, pelliculage et finitions.</p>
+        </div>
+        <div class="card">
+          <h4>Flyers & Brochures</h4>
+          <p>Formats A5, A4, pliés, papier couché ou recyclé.</p>
+        </div>
+        <div class="card">
+          <h4>Affiches grand format</h4>
+          <p>Impression haute résolution pour événements et vitrines.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="container portfolio">
+      <h3>Portfolio</h3>
+      <div class="grid">
+        <div class="thumb">Projet 1</div>
+        <div class="thumb">Projet 2</div>
+        <div class="thumb">Projet 3</div>
+      </div>
+    </section>
+
+    <section id="tarifs" class="container tarifs">
+      <h3>Tarifs indicatifs</h3>
+      <ul>
+        <li>100 cartes de visite — 25€</li>
+        <li>500 flyers A5 — 60€</li>
+        <li>Affiche A2 — 30€</li>
+      </ul>
+      <p>Pour un devis précis, contactez‑nous.</p>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h3>Contact</h3>
+      <p>Téléphone : 26014012</p>
+      <p>Email : <a href="mailto:boncybercafe@gmail.com">boncybercafe@gmail.com</a></p>
+      <p>Adresse : (à préciser)</p>
+
+      <!-- Exemple simple de formulaire (nécessite un service backend pour envoyer les messages) -->
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <label>Nom<br><input type="text" name="name" required></label>
+        <label>Email<br><input type="email" name="_replyto" required></label>
+        <label>Message<br><textarea name="message" rows="4" required></textarea></label>
+        <button type="submit" class="btn">Envoyer</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Boncyber Cafe — Tous droits réservés</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
